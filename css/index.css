@@ -1,0 +1,49 @@
+body {
+    margin: auto;
+    max-width: 1000px;
+    background-color: lightblue;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h2 {
+    display: block;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+h3 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.info {
+    text-align: center;
+}
+
+.exp, .edu {
+    padding-top: 20px;
+}
+
+.space-between {
+    display: inline-block;
+    width: 100%;
+}
+
+.company, .position, .degree {
+    float: left;
+}
+
+.location, .tenure {
+    float: right;
+}
+
