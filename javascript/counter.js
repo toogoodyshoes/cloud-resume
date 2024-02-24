@@ -6,9 +6,10 @@ function makePostRequest() {
     fetch(url, {
         method: 'POST',
         headers: {
-            'Access-Control-Allow-Origin': '*',
+            'Origin': 'https://lekhadenihar.dev',
             'Content-Type': 'application/json'
-        }
+        },
+        referrerPolicy
     })
         .then(response => {
             if (!response.ok) {
