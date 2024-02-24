@@ -6,7 +6,7 @@ function makePostRequest() {
     fetch(url, {
         method: 'POST',
         headers: {
-            'Access-Control-Allow-Headers': '*',
+            'Access-Control-Allow-Origin': '*',
             'Content-Type': 'application/json'
         }
     })
