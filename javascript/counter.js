@@ -9,7 +9,6 @@ function makePostRequest() {
             'Origin': 'https://lekhadenihar.dev',
             'Content-Type': 'application/json'
         },
-        referrerPolicy
     })
         .then(response => {
             if (!response.ok) {
