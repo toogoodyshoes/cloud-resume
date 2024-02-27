@@ -1,4 +1,4 @@
-const url = 'https://wdqshoo8v5.execute-api.ap-south-1.amazonaws.com/update_visitor_count';
+const url = 'https://d8eos8dwhj.execute-api.ap-south-1.amazonaws.com/update_count';
 
 const resultElement = document.getElementById('counter');
 
