@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # readonly PWD=`pwd`
-readonly BUCKET_NAME = static-resume-20224
-readonly DISTRIBUTION_ID = E3A0FRYIS4RN3Q
+readonly BUCKET_NAME='static-resume-20224'
+readonly DISTRIBUTION_ID='E3A0FRYIS4RN3Q'
 
 # Upload objects
 aws s3api put-object --bucket $BUCKET_NAME --key index.html --body index.html
