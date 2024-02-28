@@ -1,0 +1,32 @@
+name: Deploy
+run-name: Deploying frontend...
+
+on:
+  push:
+      branches:
+        - main
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Verify AWS CLI
+        run: aws --version
+
+      - name: Checkout
+        uses: actions/Checkout@v4.1.1
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4.0.2
+        with:
+            aws-region: ap-south-1
+            role-to-assume: arn:aws:iam::590184062594:role/cloud-resume@toogoodyshoes
+      
+      - name: Upload to S3 and Invalidate Cloudfront cache
+        run: ./upload.sh
+      
