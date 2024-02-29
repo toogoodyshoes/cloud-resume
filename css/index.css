@@ -1,7 +1,43 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'Big Shoulder';
+    src: url('fonts/BigShoulder-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Julius Sans One';
+    src: url('fonts/JuliusSansOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('fonts/Merriweather-Italic.ttf')
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('fonts/JosefinSans-Regular.ttf')
+}
+
+html {
+    height: 100%;
+}
+
 body {
     margin: auto;
-    max-width: 1000px;
-    background-color: lightblue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 section {
@@ -24,10 +60,23 @@ h3 {
 p {
     margin: 0px;
     padding: 0px;
+    font-family: 'Inter';
+    font-size: 15px;
 }
 
-.info {
-    text-align: center;
+ul {
+    font-family: 'Inter';
+    font-size: 15px;
+    padding: 6px 0px 0px 20px;
+    list-style-type: square;
+}
+
+a {
+    color: #646363;
+}
+
+a:active {
+    color: red;
 }
 
 .exp, .edu {
@@ -47,3 +96,293 @@ p {
     float: right;
 }
 
+.nav-bar {
+    background-color: black;
+    width: 100%;
+    height: 40px;
+}
+
+.top-bar {
+    display: flex;
+    max-width: 1000px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resume-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 200px;
+    height: 40px;
+}
+
+.r {
+    font-family: 'Big Shoulder';
+    font-size: 20px;
+    letter-spacing: .2em;
+    color: red;
+}
+
+.esume {
+    font-family: 'Big Shoulder';
+    font-size: 20px;
+    letter-spacing: .2em;
+}
+
+.name-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: white;
+    text-align: right;
+    width: 800px;
+    height: 40px;
+}
+
+.lekhade {
+    font-family: 'Julius Sans One';
+    font-size: 20px;
+    letter-spacing: .2em;
+    color: white;
+    -webkit-text-stroke: 1px #fff;
+}
+
+.nihar {
+    font-family: 'Julius Sans One';
+    font-size: 20px;
+    letter-spacing: .2em;
+    color: white;
+    padding-left: 10px;
+}
+
+.main-section {
+    flex: 1;
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-1 {
+    width: 200px;
+    height: calc(100vh - 40px);
+}
+
+.flag {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 400px;
+    background-image: linear-gradient(to bottom, black, red);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 65%, 0% 100%);
+}
+
+.count {
+    padding-top: 80px;
+    font-family: 'Inter';
+    font-size: 48px;
+    color: red;
+}
+
+.hit {
+    font-family: 'Inter';
+    font-size: 20px;
+    color: white;
+}
+
+.toc {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    border-right: 1px solid #92929270;
+}
+
+.skills {
+    padding-right: 20px;
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+}
+
+.projects, .work-exp, .education, .add-info {
+    padding-right: 20px;
+    padding-top: 20px;
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+}
+
+.section-2 {
+    width: 800px;
+    height: calc(100vh - 40px);
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
+
+.section-2::-webkit-scrollbar {
+    display: none;
+}
+
+.info {
+    height: 400px;
+    padding-bottom: 70px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+}
+
+.quote {
+    margin-left: 40px;
+    font-family: 'Merriweather';
+    font-size: 20px;
+    color: black;
+    text-align: start;
+}
+
+.myself {
+    margin: 40px 40px 0px 40px ;
+    font-family: 'Inter';
+    font-size: 14px;
+    text-align: start;
+    color: #929292;
+}
+
+.contact {
+    display: flex;
+    width: 100%;
+    height: 40%;
+}
+
+.comm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;    
+}
+
+.geo {
+    margin-left: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: red;
+}
+
+.banga-ka, .email, .number {
+    padding-left: 6px;
+    font-family: 'Josefin Sans';
+    font-size: 14px;
+    color: black;
+}
+
+.mail, .tele {
+    margin-left: 100px;
+    padding-top: 6px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: red;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;    
+}
+
+.github {
+    padding-left: 20px;
+    height: 56px;
+    width: 56px;
+}
+
+.section-container {
+    padding: 30px 20px;
+}
+
+.header {
+    font-family: 'Josefin Sans';
+    font-size: 24px;
+    color: black;
+}
+
+.parallel-sec {
+    display: flex;
+}
+
+.prog-lang-card {
+    background-color: #f1f1f1;
+    width: 50%;
+    margin-right: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sub-header {
+    padding-bottom: 10px;
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+}
+
+.sub-header2 {
+    padding-top: 20px;
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+}
+
+.sub-section-container {
+    padding-bottom: 30px;
+}
+
+.item-wrap {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px;
+}
+
+.icon-name {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.uo-list {
+    margin-left: 5px;
+    font-family: 'Inter';
+    font-size: 16px;
+    color: #5e5e5e;
+}
+
+.tools-card {
+    background-color: #f1f1f1;
+    width: 50%;
+    margin-left: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.m-info-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+}
+
+.leading-icon-component {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
