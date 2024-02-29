@@ -172,7 +172,22 @@
 
                 <!-- Cloud Resume -->
                 <p class="sub-header2"><b>Cloud Resume</b></p>
-                <div class="sub-section-container">TBD</div>
+                <div class="sub-section-container">
+                    <p>A Cloud based web application project using various AWS services like Route 53, S3, CloudFront,
+                        Lambda, API Gateway, Amazon Certificate Manager, DynamoDB, AWS Organizations, etc. which showcases my resume with a
+                        visitor count. With the frontend riding on the shoulders of HTML, CSS and JavaScript and the
+                        backend leveraging AWS Serverless Application Model(SAM), most of the infrastructure is
+                        provisioned using infrastructure as Code(IaC) methodology.</p>
+                    <ul>
+                        <li>Registered a domain name with a registrar and exported the zone file to Route 53 to use it
+                            as a domain service.</li>
+                        <li>Provisioned AWS resource with AWS CDK(IaC) to store & host website in Amazon S3 and deliver it around the globe using CloudFront distribution.</li>
+                        <li>Set-up a bash script and CI/CD to deploy the website to Amazon S3 & invalidate the Cloudfront Cache</li>
+                        <li>Used API Gateway as a proxy to trigger AWS Lambda funtion which updates the website visitor count in DynamoDB.</li>
+                        <li>Used GitHub Actions CI/CD to integrate and deploy the SAM infrastructure.</li>
+                        <li>Authenticated GitHub to AWS by registering GitHub OIDC to federated identity in AWS Identity & Accessmanagement to facilitate GitHub Actions CI/CD.</li>
+                    </ul>
+                </div>
 
                 <!-- Alphonso -->
                 <p class="sub-header2"><b>Alph</b></p>
@@ -182,7 +197,7 @@
                     <p><b>Core Components</b>: Flutter, Provider, Figma, NoSQL, Github Actions, CI/CD</p>
                     <ul>
                         <li>Designed a wireframe to build a foundation for Hi-Fidelity UI using Figma</li>
-                        <li>Strung presentation and business logic with the help of Provider.</li>
+                        <li>Strung together presentation and business logic with the help of Provider.</li>
                         <li>Performed unit testing for classes and controllers.</li>
                         <li>Set-up a CI/CD pipeline using Github Actions to automate testing and deploy Android
                             application using CodeMagic.</li>
