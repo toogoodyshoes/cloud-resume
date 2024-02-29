@@ -40,6 +40,8 @@
                 <div class="hit">HITS</div>
             </div>
 
+            <div style="padding-bottom: 80px;"></div>
+
             <!-- TOC -->
             <div class="toc">
                 <a href="#skills" style="text-decoration: none;">
@@ -71,7 +73,8 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
@@ -105,10 +108,13 @@
                 </div>
             </div>
 
-            <!-- Sections -->
-            <div id="skills" class="skills-container">
-                <p class="header">Skills</p>
+            <!-- Skills Section -->
+            <div id="skills" class="section-container">
+                <p class="header">SKILLS</p>
+                <div style="padding-bottom: 20px;"></div>
                 <div class="parallel-sec">
+
+                    <!-- Languages Card -->
                     <div class="prog-lang-card">
                         <p class="sub-header">Languages</p>
                         <div class="item-wrap">
@@ -134,6 +140,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Tools Card -->
                     <div class="tools-card">
                         <p class="sub-header">Tools</p>
                         <div class="item-wrap">
@@ -157,10 +165,96 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <script src="/javascript/counter.js"></script>
+            <!-- Projects Section -->
+            <div id="projects" class="section-container">
+                <p class="header">PROJECTS</p>
+
+                <!-- Cloud Resume -->
+                <p class="sub-header2"><b>Cloud Resume</b></p>
+                <div class="sub-section-container">TBD</div>
+
+                <!-- Alphonso -->
+                <p class="sub-header2"><b>Alph</b></p>
+                <div class="sub-section-container">
+                    <p>A unit conversion application with support for Length, Temperature, etc. Built for iOS and
+                        Android Platform.</p>
+                    <p><b>Core Components</b>: Flutter, Provider, Figma, NoSQL, Github Actions, CI/CD</p>
+                    <ul>
+                        <li>Designed a wireframe to build a foundation for Hi-Fidelity UI using Figma</li>
+                        <li>Strung presentation and business logic with the help of Provider.</li>
+                        <li>Performed unit testing for classes and controllers.</li>
+                        <li>Set-up a CI/CD pipeline using Github Actions to automate testing and deploy Android
+                            application using CodeMagic.</li>
+                        <li>Hooked Isar database as local storage to persist state.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Work Experience Section -->
+            <div id="work-exp" class="section-container">
+                <p class="header">WORK EXPERIENCE</p>
+                <p class="sub-header2"><b>GOODGIST</b></p>
+                <p>Software Engineer | Jul 2021 - Sep 2023</p>
+                <ul>
+                    <li>Crafted, maintained, and deployed a mobile application for iOS and Android platforms, employing
+                        the React Native framework.</li>
+                    <li>Developed and upheld a web application using React, focused on generative customer experiences.
+                    </li>
+                    <li>Designed high-fidelity UI wireframes using Figma.</li>
+                    <li>Contributed in a project focused on the integration of the HighCharts JavaScript charting
+                        library with the Dart programming language to enhance the web application's capabilities for
+                        trading analysis.</li>
+                    <li>Devised and executed a workspace design feature that enables users to customize their interface
+                        by adding or removing trading-related widgets such as watchlists, charts, and fundamental data
+                        within the web application.</li>
+                    <li>Designed the user interface (UI) and oversaw the continuous deployment of the trading app on iOS
+                        and Android platforms.</li>
+                    <li>Developed interactive candlestick charting library, harnessing the capabilities of Dart to
+                        integrate it into an existing trading application, empowering users to actively interact with
+                        and analyze market data more effectively.</li>
+                </ul>
+            </div>
+
+            <!-- Education Section -->
+            <div id="education" class="section-container">
+                <p class="header">EDUCATION</p>
+                <p class="sub-header2"><b>Ramrao Adik Institute of Technology</b></p>
+                <p>B.E. Computer Engineering | May 2019</p>
+                <ul>
+                    <li>Served as the event head for "Freakenstein," a treasure hunt competition held as part of the
+                        National Level Technical Symposium during our college's technical festival.</li>
+                    <li>Participated as a team member in the National Level Technical Symposium, specifically for the
+                        event "Digital Picasso," which involved a photography editing competition during our college's
+                        technical festival.</li>
+                </ul>
+            </div>
+
+            <!-- More Information -->
+            <div id="add-info" class="section-container">
+                <p class="header">MORE INFORMATION</p>
+                <p class="sub-header2"><b>Certifications</b></p>
+                <div style="padding-bottom: 10px;"></div>
+                <div class="m-info-container">
+                    <a href="https://www.credly.com/badges/d330bf13-4d06-49c6-a492-b40d9d76e060/public_url"
+                        target="_blank" style="text-decoration: none;">
+                        <div class="leading-icon-component">
+                            <img src="images/aws-saa.png" width="24" height="24" />
+                            <p class="uo-list">AWS Solutions Architect - Associate</p>
+                        </div>
+                    </a>
+                    <a href="https://coursera.org/share/d633186d3ceb4686c6c8381a1e725fcc" target="_blank"
+                        style="text-decoration: none;">
+                        <div class="leading-icon-component">
+                            <img src="images/google-logo.png" width="24" height="24" />
+                            <p class="uo-list">Foundations of User Experience (UX) Design</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script src="/javascript/counter.js"></script>
 </body>
 
 </html>

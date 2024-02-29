@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 @font-face {
     font-family: 'Big Shoulder';
     src: url('fonts/BigShoulder-Light.ttf');
@@ -55,10 +60,23 @@ h3 {
 p {
     margin: 0px;
     padding: 0px;
+    font-family: 'Inter';
+    font-size: 15px;
 }
 
-.info {
-    text-align: center;
+ul {
+    font-family: 'Inter';
+    font-size: 15px;
+    padding: 6px 0px 0px 20px;
+    list-style-type: square;
+}
+
+a {
+    color: #646363;
+}
+
+a:active {
+    color: red;
 }
 
 .exp, .edu {
@@ -149,9 +167,8 @@ p {
 }
 
 .section-1 {
-    flex: 1;
     width: 200px;
-    /* background-color: red; */
+    height: calc(100vh - 40px);
 }
 
 .flag {
@@ -181,35 +198,40 @@ p {
     display: flex;
     flex-direction: column;
     align-items: end;
-    margin-top: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 100%;
+    border-right: 1px solid #92929270;
 }
 
 .skills {
-    margin-right: 20px;
+    padding-right: 20px;
     font-family: 'Josefin Sans';
     font-size: 20px;
-    color: #646363;
 }
 
 .projects, .work-exp, .education, .add-info {
-    margin-right: 20px;
-    margin-top: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
     font-family: 'Josefin Sans';
     font-size: 20px;
-    color: #646363;
 }
 
 .section-2 {
-    display: flex;
-    flex-direction: column;
     width: 800px;
-    /* background-color: green; */
+    height: calc(100vh - 40px);
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
+
+.section-2::-webkit-scrollbar {
+    display: none;
 }
 
 .info {
     height: 400px;
-    margin-bottom: 96px;
+    padding-bottom: 70px;
 }
 
 .about {
@@ -223,15 +245,13 @@ p {
 .quote {
     margin-left: 40px;
     font-family: 'Merriweather';
-    font-size: 20;
+    font-size: 20px;
     color: black;
     text-align: start;
 }
 
 .myself {
-    margin-left: 40px;
-    margin-top: 40px;
-    margin-right: 40px;
+    margin: 40px 40px 0px 40px ;
     font-family: 'Inter';
     font-size: 14px;
     text-align: start;
@@ -288,12 +308,8 @@ p {
     width: 56px;
 }
 
-.skills-container {
-    /* background-color: yellow; */
-    margin-left: 20px;
-    margin-right: 20px;
-    display: flex;
-    flex-direction: column;
+.section-container {
+    padding: 30px 20px;
 }
 
 .header {
@@ -303,7 +319,6 @@ p {
 }
 
 .parallel-sec {
-    margin-top: 10px;
     display: flex;
 }
 
@@ -316,9 +331,19 @@ p {
 }
 
 .sub-header {
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     font-family: 'Josefin Sans';
     font-size: 20px;
+}
+
+.sub-header2 {
+    padding-top: 20px;
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+}
+
+.sub-section-container {
+    padding-bottom: 30px;
 }
 
 .item-wrap {
@@ -337,7 +362,7 @@ p {
     margin-left: 5px;
     font-family: 'Inter';
     font-size: 16px;
-    color: #929292;
+    color: #5e5e5e;
 }
 
 .tools-card {
@@ -346,4 +371,18 @@ p {
     margin-left: 10px;
     padding: 20px;
     border-radius: 10px;
+}
+
+.m-info-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+}
+
+.leading-icon-component {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
 }
