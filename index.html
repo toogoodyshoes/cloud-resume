@@ -57,7 +57,7 @@
                     <p class="education">Education</p>
                 </a>
                 <a href="#add-info" style="text-decoration: none;">
-                    <p class="add-info">More Information</p>
+                    <p class="add-info">Certifications</p>
                 </a>
             </div>
         </div>
@@ -70,12 +70,14 @@
                 <div class="about">
                     <p class="quote">"Hope for the best, plan for the worst."</p>
                     <p class="myself">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        I am an accomplished cloud engineer with expertise in architecting and implementing cloud-based
+                        solutions using various AWS services. Proficient in utilizing AWS services such as Route 53, S3,
+                        CloudFront, Lambda, API Gateway, Amazon Certificate Manager, DynamoDB, and AWS Organizations to
+                        develop scalable and reliable web applications. Experienced in employing Infrastructure as Code
+                        (IaC) methodologies and AWS Serverless Application Model (SAM) for efficient deployment and
+                        management of cloud infrastructure. Adept at front-end development using HTML, CSS, and
+                        JavaScript, with a keen focus on user experience. Proven track record of delivering projects on
+                        time.
                     </p>
                 </div>
                 <div class="contact">
@@ -173,35 +175,62 @@
                 <!-- Cloud Resume -->
                 <p class="sub-header2"><b>Cloud Resume</b></p>
                 <div class="sub-section-container">
-                    <p>A Cloud based web application project using various AWS services like Route 53, S3, CloudFront,
-                        Lambda, API Gateway, Amazon Certificate Manager, DynamoDB, AWS Organizations, etc. which showcases my resume with a
-                        visitor count. With the frontend riding on the shoulders of HTML, CSS and JavaScript and the
-                        backend leveraging AWS Serverless Application Model(SAM), most of the infrastructure is
-                        provisioned using infrastructure as Code(IaC) methodology.</p>
+                    <p>
+                        The project is a sophisticated cloud-based web application built on AWS infrastructure,
+                        incorporating a range of services including Route 53, S3, CloudFront, Lambda, API Gateway,
+                        Amazon Certificate Manager, DynamoDB, and AWS Organizations. It serves as a showcase for my
+                        resume, featuring a visitor count functionality.
+                    </p>
+                    <br>
+                    <p>
+                        Employing HTML, CSS, and JavaScript for the frontend, and AWS Serverless Application Model (SAM)
+                        for the backend, the project adopts an Infrastructure as Code (IaC) approach for provisioning
+                        most of its infrastructure. This ensures efficient management and scalability of resources,
+                        making it a robust and professional solution for web application development on the AWS
+                        platform. </p>
                     <ul>
-                        <li>Registered a domain name with a registrar and exported the zone file to Route 53 to use it
-                            as a domain service.</li>
-                        <li>Provisioned AWS resource with AWS CDK(IaC) to store & host website in Amazon S3 and deliver it around the globe using CloudFront distribution.</li>
-                        <li>Set-up a bash script and CI/CD to deploy the website to Amazon S3 & invalidate the Cloudfront Cache</li>
-                        <li>Used API Gateway as a proxy to trigger AWS Lambda funtion which updates the website visitor count in DynamoDB.</li>
-                        <li>Used GitHub Actions CI/CD to integrate and deploy the SAM infrastructure.</li>
-                        <li>Authenticated GitHub to AWS by registering GitHub OIDC to federated identity in AWS Identity & Accessmanagement to facilitate GitHub Actions CI/CD.</li>
+                        <li><b>Domain Registration</b>: Registered a domain name with a registrar and seamlessly
+                            integrated it with Route 53 for domain services.</li>
+                        <li><b>Infrastructure Provisioning</b>: Utilized AWS CDK (Infrastructure as Code) to provision
+                            resources on AWS, such as hosting the website on Amazon S3 and ensuring global delivery
+                            through CloudFront distribution.</li>
+                        <li><b>Automation with CI/CD</b>: Implemented a bash script along with Continuous
+                            Integration/Continuous Deployment (CI/CD) pipelines to automate the deployment process. This
+                            included deploying the website to Amazon S3 and invalidating the CloudFront cache.</li>
+                        <li><b>Visitor Count Functionality</b>: Integrated API Gateway as a proxy to trigger AWS Lambda
+                            functions, enabling real-time updates to the website's visitor count stored in DynamoDB.
+                        </li>
+                        <li><b>SAM Infrastructure Deployment</b>: Leveraged GitHub Actions CI/CD pipelines to seamlessly
+                            integrate and deploy the AWS Serverless Application Model (SAM) infrastructure.</li>
+                        <li><b>GitHub Authentication</b>: Established secure authentication between GitHub and AWS by
+                            registering GitHub OIDC as a federated identity in AWS Identity & Access Management (IAM),
+                            streamlining the GitHub Actions CI/CD process.</li>
+                        <li>Additionally, AWS Cloud Development Kit (CDK) was employed to efficiently provision
+                            CloudFront, S3, and Route 53 resources, alongside the necessary IAM roles and policies. This
+                            streamlined the deployment process and ensured consistent and secure resource configuration
+                            across the AWS infrastructure.</li>
                     </ul>
                 </div>
 
                 <!-- Alphonso -->
                 <p class="sub-header2"><b>Alph</b></p>
                 <div class="sub-section-container">
-                    <p>A unit conversion application with support for Length, Temperature, etc. Built for iOS and
-                        Android Platform.</p>
-                    <p><b>Core Components</b>: Flutter, Provider, Figma, NoSQL, Github Actions, CI/CD</p>
+                    <p>Unit conversion across various categories such as Length, Temperature, etc. Utilized Flutter
+                        framework for cross-platform development, Provider for state management, Figma for UI
+                        wireframing, NoSQL for database management, and GitHub Actions for CI/CD automation.</p>
                     <ul>
-                        <li>Designed a wireframe to build a foundation for Hi-Fidelity UI using Figma</li>
-                        <li>Strung together presentation and business logic with the help of Provider.</li>
-                        <li>Performed unit testing for classes and controllers.</li>
-                        <li>Set-up a CI/CD pipeline using Github Actions to automate testing and deploy Android
-                            application using CodeMagic.</li>
-                        <li>Hooked Isar database as local storage to persist state.</li>
+                        <li><b>UI Wireframing</b>: Designed comprehensive wireframes using Figma, providing a blueprint
+                            for the development of a polished and intuitive user interface.</li>
+                        <li><b>State Management</b>: Employed Provider to seamlessly connect presentation layers with
+                            business
+                            logic, ensuring efficient data flow and responsiveness within the application.</li>
+                        <li><b>Unit Testing</b>: Conducted thorough unit testing for classes and controllers, ensuring
+                            the reliability and stability of the application under various scenarios.</li>
+                        <li><b>CI/CD Implementation</b>: Established a robust CI/CD pipeline using GitHub Actions,
+                            automating the testing process to maintain code quality and streamline deployment workflows.
+                        </li>
+                        <li><b>Local Storage Integration</b>: Integrated Isar Database as a local storage solution,
+                            enabling efficient persistence of application state and user data across sessions.</li>
                     </ul>
                 </div>
             </div>
@@ -212,22 +241,25 @@
                 <p class="sub-header2"><b>GOODGIST</b></p>
                 <p>Software Engineer | Jul 2021 - Sep 2023</p>
                 <ul>
-                    <li>Crafted, maintained, and deployed a mobile application for iOS and Android platforms, employing
-                        the React Native framework.</li>
-                    <li>Developed and upheld a web application using React, focused on generative customer experiences.
+                    <li><b>Mobile Application Development</b>: Led the crafting, maintenance, and deployment of a
+                        cross-platform mobile application for both iOS and Android, leveraging the React Native
+                        framework to ensure a consistent user experience across platforms.</li>
+                    <li><b>Web Application Development</b>: Spearheaded the development of a customer-focused web
+                        application using React, emphasizing generative user experiences to enhance engagement.</li>
+                    <li><b>UI Design: Designed high-fidelity UI wireframes using Figma, ensuring a visually appealing
+                            and intuitive interface for both mobile and web applications.</b></li>
+                    <li><b>Integration Projects</b>: Collaborated on a project integrating the HighCharts JavaScript
+                        charting library with the Dart programming language, enhancing the trading analysis capabilities
+                        of the web application.</li>
+                    <li><b>Workspace Customization Feature</b>: Conceptualized and implemented a workspace design
+                        feature, enabling users to personalize their trading interface by adding or removing various
+                        widgets such as watchlists and charts.</li>
+                    <li><b>Continuous Deployment</b>: Designed the UI and supervised the continuous deployment process
+                        of the trading application on iOS and Android platforms, ensuring smooth and efficient updates.
                     </li>
-                    <li>Designed high-fidelity UI wireframes using Figma.</li>
-                    <li>Contributed in a project focused on the integration of the HighCharts JavaScript charting
-                        library with the Dart programming language to enhance the web application's capabilities for
-                        trading analysis.</li>
-                    <li>Devised and executed a workspace design feature that enables users to customize their interface
-                        by adding or removing trading-related widgets such as watchlists, charts, and fundamental data
-                        within the web application.</li>
-                    <li>Designed the user interface (UI) and oversaw the continuous deployment of the trading app on iOS
-                        and Android platforms.</li>
-                    <li>Developed interactive candlestick charting library, harnessing the capabilities of Dart to
-                        integrate it into an existing trading application, empowering users to actively interact with
-                        and analyze market data more effectively.</li>
+                    <li><b>Charting Library Development</b>: Developed an interactive candlestick charting library using
+                        Dart, seamlessly integrating it into an existing trading application to empower users with
+                        advanced market data analysis capabilities.</li>
                 </ul>
             </div>
 
@@ -237,18 +269,21 @@
                 <p class="sub-header2"><b>Ramrao Adik Institute of Technology</b></p>
                 <p>B.E. Computer Engineering | May 2019</p>
                 <ul>
-                    <li>Served as the event head for "Freakenstein," a treasure hunt competition held as part of the
-                        National Level Technical Symposium during our college's technical festival.</li>
-                    <li>Participated as a team member in the National Level Technical Symposium, specifically for the
-                        event "Digital Picasso," which involved a photography editing competition during our college's
+                    <li><b>Event Head, Freakenstein</b>: Orchestrated "Freakenstein," a captivating treasure hunt
+                        competition as part of our college's National Level Technical Symposium. Demonstrated strong
+                        leadership skills in coordinating the event logistics and ensuring its success within the
                         technical festival.</li>
+                    <li><b>Team Member, Digital Picasso</b>: Contributed as a team member in the National Level
+                        Technical
+                        Symposium, engaging in "Digital Picasso," a stimulating photography editing competition.
+                        Showcased creativity and technical prowess in the editing process, enriching the atmosphere of
+                        our college's technical festival.</li>
                 </ul>
             </div>
 
-            <!-- More Information -->
+            <!-- Certifications -->
             <div id="add-info" class="section-container">
-                <p class="header">MORE INFORMATION</p>
-                <p class="sub-header2"><b>Certifications</b></p>
+                <p class="header">CERTIFICATIONS</p>
                 <div style="padding-bottom: 10px;"></div>
                 <div class="m-info-container">
                     <a href="https://www.credly.com/badges/d330bf13-4d06-49c6-a492-b40d9d76e060/public_url"
