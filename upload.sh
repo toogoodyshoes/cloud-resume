@@ -21,7 +21,9 @@ aws s3api put-object --bucket $BUCKET_NAME --key css/fonts/JuliusSansOne-Regular
 
 aws s3api put-object --bucket $BUCKET_NAME --key css/fonts/Merriweather-Italic.ttf --body css/fonts/Merriweather-Italic.ttf --content-type 'application/x-font-ttf'
 
-aws s3api put-object --bucket $BUCKET_NAME --key images/as-logo.png --body images/as-logo.png --content-type 'image/png'
+aws s3api put-object --bucket $BUCKET_NAME --key images/aws-logo.png --body images/aws-logo.png --content-type 'image/png'
+
+aws s3api put-object --bucket $BUCKET_NAME --key images/terraform.png --body images/terraform.png --content-type 'image/png'
 
 aws s3api put-object --bucket $BUCKET_NAME --key images/aws-saa.png --body images/aws-saa.png --content-type 'image/png'
 
@@ -41,11 +43,41 @@ aws s3api put-object --bucket $BUCKET_NAME --key images/js-logo.png --body image
 
 aws s3api put-object --bucket $BUCKET_NAME --key images/linkedin.png --body images/linkedin.png --content-type 'image/png'
 
-aws s3api put-object --bucket $BUCKET_NAME --key images/pycharm-logo.png --body images/pycharm-logo.png --content-type 'image/png'
-
 aws s3api put-object --bucket $BUCKET_NAME --key images/python-logo.png --body images/python-logo.png --content-type 'image/png'
 
-aws s3api put-object --bucket $BUCKET_NAME --key images/vscode-logo.png --body images/vscode-logo.png --content-type 'image/png'
+aws s3api put-object --bucket $BUCKET_NAME --key images/api-gateway.png --body images/api-gateway.png --content-type 'image/png'
+
+aws s3api put-object --bucket $BUCKET_NAME --key images/bash.png --body images/bash.png --content-type 'image/png'
+
+aws s3api put-object --bucket $BUCKET_NAME --key images/cloudfront/png --body images/cloudfront.png --content-type 'image/png'
+
+aws s3api put-object --bucket $BUCKET_NAME --key images/dynamo-db.png --body images/dynamo-db.png --content-type 'image/png'
+
+aws s3api put-object --bucket $BUCKET_NAME --key images/git-logo.png --body images/git-logo.png --content-type 'image/png'
+
+aws s3api put-object --bucket $BUCKET_NAME --key images/iam-ic.png --body images/iam-ic.png --content-type 'image/png'
+
+aws s3api put-object --bucket $BUCKET_NAME --key images/iam.png --body images/iam.png --content-type 'image/png'
+
+aws s3api put-object --bucket $BUCKET_NAME --key images/lambda.png --body images/lambda.png --content-type 'image/png'
+
+aws s3api put-object --bucket $BUCKET_NAME --key images/linux-logo.png --body images/linux-logo.png --content-type 'image/png'
+
+aws s3api put-object --bucket $BUCKET_NAME --key images/organizations.png --body images/organizations.png --content-type 'image/png'
+
+aws s3api put-object --bucket $BUCKET_NAME --key images/proto.png --body images/proto.png --content-type 'image/png'
+
+aws s3api put-object --bucket $BUCKET_NAME --key images/r-53.png --body images/r-53.png --content-type 'image/png'
+
+aws s3api put-object --bucket $BUCKET_NAME --key images/s3.png --body images/s3.png --content-type 'image/png'
+
+aws s3api put-object --bucket $BUCKET_NAME --key images/terraform-logo.png --body images/terraform-logo.png --content-type 'image/png'
+
+aws s3api put-object --bucket $BUCKET_NAME --key images/ui-ux.png --body images/ui-ux.png --content-type 'image/png'
+
+aws s3api put-object --bucket $BUCKET_NAME --key images/vpc.png --body images/vpc.png --content-type 'image/png'
+
+aws s3api put-object --bucket $BUCKET_NAME --key images/wireframe.png --body images/wireframe.png --content-type 'image/png'
 
 aws s3api put-object --bucket $BUCKET_NAME --key javascript/counter.js --body javascript/counter.js --content-type 'text/javascript'
 
