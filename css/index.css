@@ -254,7 +254,7 @@ a:active {
     margin: 40px 40px 0px 40px ;
     font-family: 'Inter';
     font-size: 15px;
-    text-align: start;
+    text-align: justify;
     color: #929292;
 }
 
@@ -322,7 +322,7 @@ a:active {
     display: flex;
 }
 
-.prog-lang-card {
+.card-one {
     background-color: #f1f1f1;
     width: 50%;
     margin-right: 10px;
@@ -331,7 +331,7 @@ a:active {
 }
 
 .sub-header {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-family: 'Josefin Sans';
     font-size: 20px;
 }
@@ -353,7 +353,6 @@ a:active {
 }
 
 .icon-name {
-    margin-top: 10px;
     display: flex;
     align-items: center;
 }
@@ -365,7 +364,11 @@ a:active {
     color: #5e5e5e;
 }
 
-.tools-card {
+.service-icons {
+    border-radius: 4px;
+}
+
+.card-two {
     background-color: #f1f1f1;
     width: 50%;
     margin-left: 10px;
