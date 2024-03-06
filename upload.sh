@@ -49,7 +49,7 @@ aws s3api put-object --bucket $BUCKET_NAME --key images/api-gateway.png --body i
 
 aws s3api put-object --bucket $BUCKET_NAME --key images/bash.png --body images/bash.png --content-type 'image/png'
 
-aws s3api put-object --bucket $BUCKET_NAME --key images/cloudfront/png --body images/cloudfront.png --content-type 'image/png'
+aws s3api put-object --bucket $BUCKET_NAME --key images/cloudfront.png --body images/cloudfront.png --content-type 'image/png'
 
 aws s3api put-object --bucket $BUCKET_NAME --key images/dynamo-db.png --body images/dynamo-db.png --content-type 'image/png'
 
@@ -78,6 +78,18 @@ aws s3api put-object --bucket $BUCKET_NAME --key images/ui-ux.png --body images/
 aws s3api put-object --bucket $BUCKET_NAME --key images/vpc.png --body images/vpc.png --content-type 'image/png'
 
 aws s3api put-object --bucket $BUCKET_NAME --key images/wireframe.png --body images/wireframe.png --content-type 'image/png'
+
+aws s3api put-object --bucket $BUCKET_NAME --key images/docker-logo.png --body images/docker-logo.png --content-type 'image/png'
+
+aws s3api put-object --bucket $BUCKET_NAME --key images/k8s-logo.png --body images/k8s-logo.png --content-type 'image/png'
+
+aws s3api put-object --bucket $BUCKET_NAME --key images/ec.png --body images/ec.png --content-type 'image/png'
+
+aws s3api put-object --bucket $BUCKET_NAME --key images/ec2.png --body images/ec2.png --content-type 'image/png'
+
+aws s3api put-object --bucket $BUCKET_NAME --key images/efs.png --body images/efs.png --content-type 'image/png'
+
+aws s3api put-object --bucket $BUCKET_NAME --key images/rds.png --body images/rds.png --content-type 'image/png'
 
 aws s3api put-object --bucket $BUCKET_NAME --key javascript/counter.js --body javascript/counter.js --content-type 'text/javascript'
 
