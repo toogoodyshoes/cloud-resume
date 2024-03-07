@@ -339,8 +339,7 @@
                         the application server,
                         database, and file server components. Amazon services such as VPC, EC2, RDS, and EFS are
                         utilized in conjunction with load balancers and auto-scaling groups to efficiently handle
-                        traffic fluctuations and ensure scalability. Additionally, ElastiCache serves as a caching layer
-                        in front of RDS to optimize performance.</p>
+                        traffic fluctuations and ensure scalability.</p>
                     <br>
                     <p>Overall, the project aims to deliver a robust and reliable web application infrastructure that
                         can seamlessly adapt to varying workloads and demands. Furthermore, all resources have been
@@ -358,10 +357,6 @@
                         <li><b>RDS Aurora Multi-AZ Deployment</b>: Configured a subnet group to support multi-AZ
                             deployment of Amazon RDS Aurora. Created an Aurora DB cluster operating across the two data
                             subnets, ensuring data redundancy and fault tolerance.</li>
-                        <li><b>ElastiCache (Memcached)</b>: Set up an ElastiCache-Memcached server-side caching
-                            mechanism
-                            to alleviate database load by caching common queries, leading to improved performance and
-                            faster loading times for the application.</li>
                         <li><b>EFS Cluster</b>: Established an Amazon Elastic File System (EFS) cluster to provide a
                             shared filesystem for the web application servers, enabling seamless data sharing and access
                             across multiple instances.</li>
@@ -375,7 +370,7 @@
                         <li><b>Terraform (IaC)</b>:Terraform was utilized to provision the infrastructure as
                             code, ensuring consistency and repeatability in the deployment process. This allowed for the
                             automated creation and management of the various resources, including the VPC, subnets,
-                            internet gateway, NAT gateways, RDS Aurora cluster, ElastiCache-Memcached, EFS cluster,
+                            internet gateway, NAT gateways, RDS Aurora cluster, EFS cluster,
                             Application Load Balancer, and Auto Scaling Group</li>
                     </ul>
                 </div>
