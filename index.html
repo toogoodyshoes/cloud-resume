@@ -183,6 +183,22 @@
                                 <img src="images/organizations.png" width="16" height="16" class="service-icons" />
                                 <p class="uo-list">AWS Organizations</p>
                             </div>
+                            <div class="icon-name">
+                                <img src="images/rds.png" width="16" height="16" class="service-icons" />
+                                <p class="uo-list">AWS RDS</p>
+                            </div>
+                            <div class="icon-name">
+                                <img src="images/ec.png" width="16" height="16" class="service-icons" />
+                                <p class="uo-list">ElastiCache</p>
+                            </div>
+                            <div class="icon-name">
+                                <img src="images/ec2.png" width="16" height="16" class="service-icons" />
+                                <p class="uo-list">EC2</p>
+                            </div>
+                            <div class="icon-name">
+                                <img src="images/efs.png" width="16" height="16" class="service-icons" />
+                                <p class="uo-list">Elastic File Store (EFS)</p>
+                            </div>
                         </div>
                     </div>
 
@@ -258,6 +274,14 @@
                                 <img src="images/bash.png" width="16" height="16" />
                                 <p class="uo-list">BASH</p>
                             </div>
+                            <div class="icon-name">
+                                <img src="images/docker-logo.png" width="16" height="16" />
+                                <p class="uo-list">Docker</p>
+                            </div>
+                            <div class="icon-name">
+                                <img src="images/k8s-logo.png" width="16" height="16" />
+                                <p class="uo-list">Kubernetes</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -304,6 +328,50 @@
                             CloudFront, S3, and Route 53 resources, alongside the necessary IAM roles and policies. This
                             streamlined the deployment process and ensured consistent and secure resource configuration
                             across the AWS infrastructure.</li>
+                    </ul>
+                </div>
+
+                <!-- Highly Available Web Application -->
+                <p class="sub-header2"><b>Highly Available Web Application</b></p>
+                <div class="sub-section-container">
+                    <p>Project entails the development of a cloud-based web application characterized by high
+                        availability and scalability. The architecture is designed to allow for independent scaling of
+                        the application server,
+                        database, and file server components. Amazon services such as VPC, EC2, RDS, and EFS are
+                        utilized in conjunction with load balancers and auto-scaling groups to efficiently handle
+                        traffic fluctuations and ensure scalability.</p>
+                    <br>
+                    <p>Overall, the project aims to deliver a robust and reliable web application infrastructure that
+                        can seamlessly adapt to varying workloads and demands. Furthermore, all resources have been
+                        provisioned using infrastructure as code methodologies.</p>
+                    <ul>
+                        <li><b>VPC Configuration</b>: Established a Virtual Private Cloud (VPC) with subnets distributed
+                            across two Availability Zones (AZs). This setup ensures fault tolerance and high
+                            availability for the hosted application.</li>
+                        <li><b>Internet Connectivity</b>: Implemented an Internet Gateway within the VPC to enable
+                            internet access for resources residing in the public subnets, facilitating communication
+                            with the outside world.</li>
+                        <li><b>NAT Gateway</b>: Deployed NAT Gateways in each public subnet to facilitate outbound
+                            internet connectivity for resources in the private application subnets, ensuring secure and
+                            controlled access to the internet.</li>
+                        <li><b>RDS Aurora Multi-AZ Deployment</b>: Configured a subnet group to support multi-AZ
+                            deployment of Amazon RDS Aurora. Created an Aurora DB cluster operating across the two data
+                            subnets, ensuring data redundancy and fault tolerance.</li>
+                        <li><b>EFS Cluster</b>: Established an Amazon Elastic File System (EFS) cluster to provide a
+                            shared filesystem for the web application servers, enabling seamless data sharing and access
+                            across multiple instances.</li>
+                        <li><b>Application Load Balancer (ALB)</b>: Deployed an Application Load Balancer to distribute
+                            incoming traffic across the application servers hosted in the public subnets, ensuring
+                            optimal resource utilization and high availability.</li>
+                        <li><b>Auto Scaling Group</b>: Implemented a Highly Available (HA) application server setup
+                            using Auto Scaling Group with a launch template, allowing for dynamic scaling of application
+                            instances based on demand. This ensures reliability and scalability of the WordPress
+                            installation.</li>
+                        <li><b>Terraform (IaC)</b>:Terraform was utilized to provision the infrastructure as
+                            code, ensuring consistency and repeatability in the deployment process. This allowed for the
+                            automated creation and management of the various resources, including the VPC, subnets,
+                            internet gateway, NAT gateways, RDS Aurora cluster, EFS cluster,
+                            Application Load Balancer, and Auto Scaling Group</li>
                     </ul>
                 </div>
 
