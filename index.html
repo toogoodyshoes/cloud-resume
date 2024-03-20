@@ -1,473 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Nihar Lekhade</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Resume">
-    <meta name="keywords" content="Nihar, Lekhade, Resume, CV">
-    <meta name="author" content="Nihar Lekhade">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="description" content="Resume" />
+    <meta name="keywords" content="Nihar, Lekhade, Resume, CV" />
+    <meta name="author" content="Nihar Lekhade" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 </head>
 
 <body>
-    <!-- Top Bar -->
-    <div class="nav-bar">
-        <div class="top-bar">
-            <div class="resume-container">
-                <p class="r">R</p>
-                <p class="esume">esume</p>
-            </div>
-            <div class="name-container">
-                <p class="lekhade">Lekhade</p>
-                <p class="nihar">Nihar</p>
+    <div class="background"></div>
+    <div class="page-view">
+        <div class="nav-bar-container">
+            <div class="nav-bar">
+                <div class="nav-bar-item">
+                    <a href="#" id="about-button" style="text-decoration: none">ABOUT</a>
+                </div>
+                <div class="nav-bar-item">
+                    <a href="#" id="projects-button" style="text-decoration: none">PROJECTS</a>
+                </div>
+                <div class="nav-bar-item">
+                    <a href="#" id="work-button" style="text-decoration: none">WORK</a>
+                </div>
             </div>
         </div>
+        <div class="page">
+
+
+            <!-- Hi, I am Nihar! -->
+            <div class="info">
+                <p class="salutation">Hi, I am </p>
+                <p class="name">Nihar</p>
+                <p class="salutation">!</p>
+            </div>
+
+            <!-- About me -->
+            <p class="myself">
+                I'm a passionate individual with a diverse set of interests that keep me energized and engaged.
+                Football
+                isn't just a game to me; it's a thrilling spectacle that I love to watch and play whenever I get the
+                chance.
+                Coding is another plane where I find myself completely immersed. It's like deciphering a puzzle with
+                every keystroke, and the sense of accomplishment when everything falls into place is truly
+                gratifying.
+                I possess an appetite for gaming, capable of losing myself for hours on
+                end, unraveling intricate storylines.
+                Lastly, I thrive on the thrill of exploration and the unexpected discoveries it brings.
+            </p>
+
+            <p class="myself-summed-up">In essence, I'm a football-loving, code-crunching, game-playing, always
+                seeking
+                out new
+                adventures and challenges to fuel my passion for life kind of guy.</p>
+
+            <!-- Contact -->
+            <div class="contact">
+                <p class="contact-header">REACH OUT TO ME AT</p>
+                <p class="contact-item">lekhadenihar11@gmail.com</p>
+            </div>
+
+            <!-- Social -->
+            <div class="social">
+                <div>
+                    <a href="https://linkedin.com/in/niharlekhade" target="_blank">
+                        <img src="images/linkedin-logo.png" width="48" height="48" />
+                    </a>
+                </div>
+                <div class="github">
+                    <a href="https://github.com/toogoodyshoes" target="_blank">
+                        <img src="images/github-logo.png" width="48" height="48" />
+                    </a>
+                </div>
+            </div>
+
+            <!-- Visitor Count -->
+            <div class="counter-container">
+                <p class="counter-first-half">This website has been visited</p>
+                <p id="counter" class="counter-value">24</p>
+                <p class="counter-second-half">times.</p>
+            </div>
+        </div>
+        <div class="page">Projects</div>
+        <div class="page">Certifications</div>
+        <div class="page">Work</div>
     </div>
 
-    <!-- Content -->
-    <div class="main-section">
-
-        <!-- Left Pane -->
-        <div class="section-1">
-
-            <!-- Flag -->
-            <div class="flag">
-                <div class="count" id="counter">-</div>
-                <div class="hit">HITS</div>
-            </div>
-
-            <div style="padding-bottom: 80px;"></div>
-
-            <!-- TOC -->
-            <div class="toc">
-                <a href="#skills" style="text-decoration: none;">
-                    <p class="skills">Skills</p>
-                </a>
-                <a href="#projects" style="text-decoration: none;">
-                    <p class="projects">Projects</p>
-                </a>
-                <a href="#work-exp" style="text-decoration: none;">
-                    <p class="work-exp">Work Experience</p>
-                </a>
-                <a href="#education" style="text-decoration: none;">
-                    <p class="education">Education</p>
-                </a>
-                <a href="#add-info" style="text-decoration: none;">
-                    <p class="add-info">Certifications</p>
-                </a>
-            </div>
-        </div>
-
-        <!-- Body Pane -->
-        <div class="section-2">
-
-            <!-- Bio -->
-            <div class="info">
-                <div class="about">
-                    <p class="quote">"Hope for the best, plan for the worst."</p>
-                    <p class="myself">
-                        I am an accomplished cloud engineer with expertise in architecting and implementing cloud-based
-                        solutions using various AWS services. Proficient in utilizing AWS services such as Route 53, S3,
-                        CloudFront, Lambda, API Gateway, Amazon Certificate Manager, DynamoDB, and AWS Organizations to
-                        develop scalable and reliable web applications. Experienced in employing Infrastructure as Code
-                        (IaC) methodologies and AWS Serverless Application Model (SAM) for efficient deployment and
-                        management of cloud infrastructure. Adept at front-end development using HTML, CSS, and
-                        JavaScript, with a keen focus on user experience. Proven track record of delivering projects on
-                        time.
-                    </p>
-                </div>
-                <div class="contact">
-                    <div class="comm">
-                        <div class="geo">
-                            <i class="material-icons">place</i>
-                            <p class="banga-ka">Bangalore, Karnataka</p>
-                        </div>
-                        <div class="mail">
-                            <i class="material-icons">email</i>
-                            <p class="email">lekhadenihar11@gmail.com</p>
-                        </div>
-                        <div class="tele">
-                            <i class="material-icons">call</i>
-                            <p class="number">+91 81693 71989</p>
-                        </div>
-                    </div>
-                    <div class="social">
-                        <div class="linkedin">
-                            <a href="https://linkedin.com/in/niharlekhade" target="_blank">
-                                <img src="images/linkedin.png" width="48" height="48" />
-                            </a>
-                        </div>
-                        <div class="github">
-                            <a href="https://github.com/toogoodyshoes" target="_blank">
-                                <img src="images/github.png" width="48" height="48" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Skills Section -->
-            <div id="skills" class="section-container">
-                <p class="header">SKILLS</p>
-
-                <div style="padding-bottom: 20px;"></div>
-
-                <div class="parallel-sec">
-
-                    <!-- Card 1 -->
-                    <div class="card-one">
-
-                        <!-- Infrastructure as Code -->
-                        <p class="sub-header">Infrastructure as Code</p>
-                        <div class="item-wrap">
-                            <div class="icon-name">
-                                <img src="images/aws-logo.png" width="16" height="16" />
-                                <p class="uo-list">AWS SAM</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/aws-logo.png" width="16" height="16" />
-                                <p class="uo-list">AWS CDK</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/terraform-logo.png" width="16" height="16" />
-                                <p class="uo-list">Terraform</p>
-                            </div>
-                        </div>
-
-                        <div style="padding-bottom: 30px;"></div>
-
-                        <!-- AWS Services -->
-                        <p class="sub-header">AWS Services</p>
-                        <div class="item-wrap">
-                            <div class="icon-name">
-                                <img src="images/iam.png" width="16" height="16" class="service-icons" />
-                                <p class="uo-list">IAM</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/iam-ic.png" width="16" height="16" class="service-icons" />
-                                <p class="uo-list">IAM Identity Center</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/vpc.png" width="16" height="16" class="service-icons" />
-                                <p class="uo-list">VPC</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/s3.png" width="16" height="16" class="service-icons" />
-                                <p class="uo-list">S3</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/lambda.png" width="16" height="16" class="service-icons" />
-                                <p class="uo-list">Lambda</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/dynamo-db.png" width="16" height="16" class="service-icons" />
-                                <p class="uo-list">DynamoDB</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/r-53.png" width="16" height="16" class="service-icons" />
-                                <p class="uo-list">Route 53</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/cloudfront.png" width="16" height="16" class="service-icons" />
-                                <p class="uo-list">CloudFront</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/api-gateway.png" width="16" height="16" class="service-icons" />
-                                <p class="uo-list">API Gateway</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/organizations.png" width="16" height="16" class="service-icons" />
-                                <p class="uo-list">AWS Organizations</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/rds.png" width="16" height="16" class="service-icons" />
-                                <p class="uo-list">AWS RDS</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/ec.png" width="16" height="16" class="service-icons" />
-                                <p class="uo-list">ElastiCache</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/ec2.png" width="16" height="16" class="service-icons" />
-                                <p class="uo-list">EC2</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/efs.png" width="16" height="16" class="service-icons" />
-                                <p class="uo-list">Elastic File Store (EFS)</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="card-two">
-
-                        <!-- Frontend -->
-                        <p class="sub-header">Frontend</p>
-                        <div class="item-wrap">
-                            <div class="icon-name">
-                                <img src="images/dart-logo.png" width="16" height="16" />
-                                <p class="uo-list">Dart</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/js-logo.png" width="16" height="16" />
-                                <p class="uo-list">Javascript</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/html-logo.png" width="16" height="16" />
-                                <p class="uo-list">HTML</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/css-logo.png" width="16" height="16" />
-                                <p class="uo-list">CSS</p>
-                            </div>
-                        </div>
-
-                        <div style="padding-bottom: 30px;"></div>
-
-                        <!-- Designing -->
-                        <p class="sub-header">Designing</p>
-                        <div class="item-wrap">
-                            <div class="icon-name">
-                                <img src="images/ui-ux.png" width="16" height="16" />
-                                <p class="uo-list">UI/UX</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/wireframe.png" width="16" height="16" />
-                                <p class="uo-list">Wireframing</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/proto.png" width="16" height="16" />
-                                <p class="uo-list">Prototyping</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/figma-logo.png" width="16" height="16" />
-                                <p class="uo-list">Figma</p>
-                            </div>
-                        </div>
-
-                        <div style="padding-bottom: 30px;"></div>
-
-                        <!-- Others -->
-                        <p class="sub-header">Others</p>
-                        <div class="item-wrap">
-                            <div class="icon-name">
-                                <img src="images/git-logo.png" width="16" height="16" />
-                                <p class="uo-list">Git</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/linux-logo.png" width="16" height="16" />
-                                <p class="uo-list">Linux</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/github.png" width="16" height="16" />
-                                <p class="uo-list">GitHub Actions</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/python-logo.png" width="16" height="16" />
-                                <p class="uo-list">Python</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/bash.png" width="16" height="16" />
-                                <p class="uo-list">BASH</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/docker-logo.png" width="16" height="16" />
-                                <p class="uo-list">Docker</p>
-                            </div>
-                            <div class="icon-name">
-                                <img src="images/k8s-logo.png" width="16" height="16" />
-                                <p class="uo-list">Kubernetes</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Projects Section -->
-            <div id="projects" class="section-container">
-                <p class="header">PROJECTS</p>
-
-                <!-- Cloud Resume -->
-                <p class="sub-header2"><b>Cloud Resume</b></p>
-                <div class="sub-section-container">
-                    <p>
-                        The project is a sophisticated cloud-based web application built on AWS infrastructure,
-                        incorporating a range of services including Route 53, S3, CloudFront, Lambda, API Gateway,
-                        Amazon Certificate Manager, DynamoDB, and AWS Organizations. It serves as a showcase for my
-                        resume, featuring a visitor count functionality.
-                    </p>
-                    <br>
-                    <p>
-                        Employing HTML, CSS, and JavaScript for the frontend, and AWS Serverless Application Model (SAM)
-                        for the backend, the project adopts an Infrastructure as Code (IaC) approach for provisioning
-                        most of its infrastructure. This ensures efficient management and scalability of resources,
-                        making it a robust and professional solution for web application development on the AWS
-                        platform. </p>
-                    <ul>
-                        <li><b>Domain Registration</b>: Registered a domain name with a registrar and seamlessly
-                            integrated it with Route 53 for domain services.</li>
-                        <li><b>Infrastructure Provisioning</b>: Utilized AWS CDK (Infrastructure as Code) to provision
-                            resources on AWS, such as hosting the website on Amazon S3 and ensuring global delivery
-                            through CloudFront distribution.</li>
-                        <li><b>Automation with CI/CD</b>: Implemented a bash script along with Continuous
-                            Integration/Continuous Deployment (CI/CD) pipelines to automate the deployment process. This
-                            included deploying the website to Amazon S3 and invalidating the CloudFront cache.</li>
-                        <li><b>Visitor Count Functionality</b>: Integrated API Gateway as a proxy to trigger AWS Lambda
-                            functions, enabling real-time updates to the website's visitor count stored in DynamoDB.
-                        </li>
-                        <li><b>SAM Infrastructure Deployment</b>: Leveraged GitHub Actions CI/CD pipelines to seamlessly
-                            integrate and deploy the AWS Serverless Application Model (SAM) infrastructure.</li>
-                        <li><b>GitHub Authentication</b>: Established secure authentication between GitHub and AWS by
-                            registering GitHub OIDC as a federated identity in AWS Identity & Access Management (IAM),
-                            streamlining the GitHub Actions CI/CD process.</li>
-                        <li>Additionally, AWS Cloud Development Kit (CDK) was employed to efficiently provision
-                            CloudFront, S3, and Route 53 resources, alongside the necessary IAM roles and policies. This
-                            streamlined the deployment process and ensured consistent and secure resource configuration
-                            across the AWS infrastructure.</li>
-                    </ul>
-                </div>
-
-                <!-- Highly Available Web Application -->
-                <p class="sub-header2"><b>Highly Available Web Application</b></p>
-                <div class="sub-section-container">
-                    <p>Project entails the development of a cloud-based web application characterized by high
-                        availability and scalability. The architecture is designed to allow for independent scaling of
-                        the application server,
-                        database, and file server components. Amazon services such as VPC, EC2, RDS, and EFS are
-                        utilized in conjunction with load balancers and auto-scaling groups to efficiently handle
-                        traffic fluctuations and ensure scalability.</p>
-                    <br>
-                    <p>Overall, the project aims to deliver a robust and reliable web application infrastructure that
-                        can seamlessly adapt to varying workloads and demands. Furthermore, all resources have been
-                        provisioned using infrastructure as code methodologies.</p>
-                    <ul>
-                        <li><b>VPC Configuration</b>: Established a Virtual Private Cloud (VPC) with subnets distributed
-                            across two Availability Zones (AZs). This setup ensures fault tolerance and high
-                            availability for the hosted application.</li>
-                        <li><b>Internet Connectivity</b>: Implemented an Internet Gateway within the VPC to enable
-                            internet access for resources residing in the public subnets, facilitating communication
-                            with the outside world.</li>
-                        <li><b>NAT Gateway</b>: Deployed NAT Gateways in each public subnet to facilitate outbound
-                            internet connectivity for resources in the private application subnets, ensuring secure and
-                            controlled access to the internet.</li>
-                        <li><b>RDS Aurora Multi-AZ Deployment</b>: Configured a subnet group to support multi-AZ
-                            deployment of Amazon RDS Aurora. Created an Aurora DB cluster operating across the two data
-                            subnets, ensuring data redundancy and fault tolerance.</li>
-                        <li><b>EFS Cluster</b>: Established an Amazon Elastic File System (EFS) cluster to provide a
-                            shared filesystem for the web application servers, enabling seamless data sharing and access
-                            across multiple instances.</li>
-                        <li><b>Application Load Balancer (ALB)</b>: Deployed an Application Load Balancer to distribute
-                            incoming traffic across the application servers hosted in the public subnets, ensuring
-                            optimal resource utilization and high availability.</li>
-                        <li><b>Auto Scaling Group</b>: Implemented a Highly Available (HA) application server setup
-                            using Auto Scaling Group with a launch template, allowing for dynamic scaling of application
-                            instances based on demand. This ensures reliability and scalability of the WordPress
-                            installation.</li>
-                        <li><b>Terraform (IaC)</b>:Terraform was utilized to provision the infrastructure as
-                            code, ensuring consistency and repeatability in the deployment process. This allowed for the
-                            automated creation and management of the various resources, including the VPC, subnets,
-                            internet gateway, NAT gateways, RDS Aurora cluster, EFS cluster,
-                            Application Load Balancer, and Auto Scaling Group</li>
-                    </ul>
-                </div>
-
-                <!-- Alphonso -->
-                <p class="sub-header2"><b>Alph</b></p>
-                <div class="sub-section-container">
-                    <p>Unit conversion across various categories such as Length, Temperature, etc. Utilized Flutter
-                        framework for cross-platform development, Provider for state management, Figma for UI
-                        wireframing, NoSQL for database management, and GitHub Actions for CI/CD automation.</p>
-                    <ul>
-                        <li><b>UI Wireframing</b>: Designed comprehensive wireframes using Figma, providing a blueprint
-                            for the development of a polished and intuitive user interface.</li>
-                        <li><b>State Management</b>: Employed Provider to seamlessly connect presentation layers with
-                            business
-                            logic, ensuring efficient data flow and responsiveness within the application.</li>
-                        <li><b>Unit Testing</b>: Conducted thorough unit testing for classes and controllers, ensuring
-                            the reliability and stability of the application under various scenarios.</li>
-                        <li><b>CI/CD Implementation</b>: Established a robust CI/CD pipeline using GitHub Actions,
-                            automating the testing process to maintain code quality and streamline deployment workflows.
-                        </li>
-                        <li><b>Local Storage Integration</b>: Integrated Isar Database as a local storage solution,
-                            enabling efficient persistence of application state and user data across sessions.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Work Experience Section -->
-            <div id="work-exp" class="section-container">
-                <p class="header">WORK EXPERIENCE</p>
-                <p class="sub-header2"><b>GoodGist</b></p>
-                <p>Software Engineer | Jul 2021 - Sep 2023</p>
-                <ul>
-                    <li><b>Mobile Application Development</b>: Led the crafting, maintenance, and deployment of a
-                        cross-platform mobile application for both iOS and Android, leveraging the React Native
-                        framework to ensure a consistent user experience across platforms.</li>
-                    <li><b>Web Application Development</b>: Spearheaded the development of a customer-focused web
-                        application using React, emphasizing generative user experiences to enhance engagement.</li>
-                    <li><b>UI Design: Designed high-fidelity UI wireframes using Figma, ensuring a visually appealing
-                            and intuitive interface for both mobile and web applications.</b></li>
-                    <li><b>Integration Projects</b>: Collaborated on a project integrating the HighCharts JavaScript
-                        charting library with the Dart programming language, enhancing the trading analysis capabilities
-                        of the web application.</li>
-                    <li><b>Workspace Customization Feature</b>: Conceptualized and implemented a workspace design
-                        feature, enabling users to personalize their trading interface by adding or removing various
-                        widgets such as watchlists and charts.</li>
-                    <li><b>Continuous Deployment</b>: Designed the UI and supervised the continuous deployment process
-                        of the trading application on iOS and Android platforms, ensuring smooth and efficient updates.
-                    </li>
-                    <li><b>Charting Library Development</b>: Developed an interactive candlestick charting library using
-                        Dart, seamlessly integrating it into an existing trading application to empower users with
-                        advanced market data analysis capabilities.</li>
-                </ul>
-            </div>
-
-            <!-- Education Section -->
-            <div id="education" class="section-container">
-                <p class="header">EDUCATION</p>
-                <p class="sub-header2"><b>Ramrao Adik Institute of Technology</b></p>
-                <p>B.E. Computer Engineering | May 2019</p>
-                <ul>
-                    <li><b>Event Head, Freakenstein</b>: Orchestrated "Freakenstein," a captivating treasure hunt
-                        competition as part of our college's National Level Technical Symposium. Demonstrated strong
-                        leadership skills in coordinating the event logistics and ensuring its success within the
-                        technical festival.</li>
-                    <li><b>Team Member, Digital Picasso</b>: Contributed as a team member in the National Level
-                        Technical
-                        Symposium, engaging in "Digital Picasso," a stimulating photography editing competition.
-                        Showcased creativity and technical prowess in the editing process, enriching the atmosphere of
-                        our college's technical festival.</li>
-                </ul>
-            </div>
-
-            <!-- Certifications -->
-            <div id="add-info" class="section-container">
-                <p class="header">CERTIFICATIONS</p>
-                <div style="padding-bottom: 10px;"></div>
-                <div class="m-info-container">
-                    <a href="https://www.credly.com/badges/d330bf13-4d06-49c6-a492-b40d9d76e060/public_url"
-                        target="_blank" style="text-decoration: none;">
-                        <div class="leading-icon-component">
-                            <img src="images/aws-saa.png" width="24" height="24" />
-                            <p class="uo-list">AWS Solutions Architect - Associate</p>
-                        </div>
-                    </a>
-                    <a href="https://coursera.org/share/d633186d3ceb4686c6c8381a1e725fcc" target="_blank"
-                        style="text-decoration: none;">
-                        <div class="leading-icon-component">
-                            <img src="images/google-logo.png" width="24" height="24" />
-                            <p class="uo-list">Foundations of User Experience (UX) Design</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <script src="/javascript/counter.js"></script>
+    <script src="javascript/index.js"></script>
 </body>
 
 </html>
