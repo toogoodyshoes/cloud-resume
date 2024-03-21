@@ -16,7 +16,7 @@ aws s3api put-object --bucket $BUCKET_NAME --key css/fonts/Inter-Regular.ttf --b
 
 aws s3api put-object --bucket $BUCKET_NAME --key css/fonts/Inter-Medium.ttf --body css/fonts/Inter-Medium.ttf --content-type 'application/x-font-ttf'
 
-aws s3api put-object --bucket $BUCKET_NAME --key images/bg.png --body images/bg.png --content-type 'image/png'
+aws s3api put-object --bucket $BUCKET_NAME --key images/bg.jpg --body images/bg.jpg --content-type 'image/jpg'
 
 aws s3api put-object --bucket $BUCKET_NAME --key images/github-logo.png --body images/github-logo.png --content-type 'image/png'
 
