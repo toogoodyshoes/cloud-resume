@@ -95,7 +95,6 @@ a:hover {
     color: white;
     text-align: center;
     text-decoration: none;
-    /* background-color: red; */
 }
 
 .content-body {
@@ -172,15 +171,6 @@ a:hover {
     text-align: justify;
 }
 
-/* .myself-summed-up {
-    padding-left: 32px;
-    padding-top: 8px;
-    padding-right: 32px;
-    font-family: 'Inter';
-    font-weight: 300;
-    font-size: 14px;
-} */
-
 .contact {
     padding-left: 32px;
     padding-top: 32px;
@@ -246,11 +236,6 @@ a:hover {
     font-weight: 300;
     font-size: 14px;
 }
-
-/* .work-container {
-    width: 1000px;
-    height: 100%;
-} */
 
 .project-dashboard {
     height: 100%;
