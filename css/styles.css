@@ -21,10 +21,13 @@
     padding: 0px;
 }
 
-body,
 html {
     height: 100%;
-    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    width: 100%;
 }
 
 a,
@@ -34,15 +37,41 @@ a:active {
 
 a:hover {
     color: #d9d9d9;
+    cursor: pointer;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/bg.jpg");
+    background-size: cover;
+    z-index: -2;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    z-index: -1;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-bar-container {
-    position: absolute;
-    top: 0px;
-    left: 0px;
     width: 100%;
     height: 64px;
-    z-index: 1;
 }
 
 .nav-bar {
@@ -58,61 +87,58 @@ a:hover {
 }
 
 .nav-bar-item {
+    width: 124px;
     font-family: "Inter";
     font-weight: 500;
     font-size: 16;
     letter-spacing: 0.2em;
     color: white;
+    text-align: center;
     text-decoration: none;
+    /* background-color: red; */
 }
 
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
+.content-body {
     width: 100%;
     height: 100%;
-    background-image: url("/images/bg.jpg");
-    background-size: cover;
-    z-index: -1;
-}
-
-.page-view {
-    height: 100%;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    display: flex;
-    flex-direction: column;
-    background: rgba(0, 0, 0, 0.7);
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.page-view::-webkit-scrollbar {
-    display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.page-view {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: scroll;
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.content-body::-webkit-scrollbar {
+    display: none;
+}
+
 .page {
-    height: 100%;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 64px;
-    scroll-snap-align: start;
+    width: 100%;
+    height: calc(100vh - 64px);
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: center;
     font-size: 24px;
-    min-height: 100vh;
     color: white;
+}
+
+.about-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .info {
@@ -143,16 +169,17 @@ a:hover {
     font-family: 'Inter';
     font-weight: 300;
     font-size: 14px;
+    text-align: justify;
 }
 
-.myself-summed-up {
+/* .myself-summed-up {
     padding-left: 32px;
     padding-top: 8px;
     padding-right: 32px;
     font-family: 'Inter';
     font-weight: 300;
     font-size: 14px;
-}
+} */
 
 .contact {
     padding-left: 32px;
@@ -193,11 +220,11 @@ a:hover {
 }
 
 .counter-container {
+    width: 100%;
+    height: 64px;
     display: flex;
-    padding-top: 100px;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
 .counter-first-half {
@@ -220,14 +247,13 @@ a:hover {
     font-size: 14px;
 }
 
-.work-container {
-    padding-top: 64px;
+/* .work-container {
     width: 1000px;
     height: 100%;
-}
+} */
 
-.work-header {
-    padding-top: 64px;
+.page-header {
+    padding-top: 32px;
     padding-bottom: 32px;
     max-width: 1000px;
     font-family: 'Inter';
@@ -242,6 +268,7 @@ a:hover {
     padding-top: 32px;
     max-width: 1000px;
     display: flex;
+    align-items: center;
 }
 
 .dash {
